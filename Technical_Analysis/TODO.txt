@@ -1,0 +1,40 @@
+Questions for Dimakis:
+ - Am I successfully predicitng future values instead of just given ones
+ - Next steps are multivariate, longer range predictions, and a classifier? that will take actions as a metric to compare to holding/dow
+ - For predicting a week in advance do I shift by day or by week
+ - 
+
+XGB_univariate:
+Make the univariate model multivariate 
+ - several step required, check the forecasting for ability to handle several variables
+ - Set arguments for how much lag, which variables, how far to predict
+ - Will also need to change it to predict further than one day
+Univariate needs better feature naming when creating a lag for multiple features (use the original name somehow)
+
+
+
+General:
+Save the data somewhere and update it every week or so or make a function to get new data
+ - Need a way to get current price not just yesterdays
+ - Data collector should create a csv with TI stock data from yfinance, RSI, MACD, EMA, and whatever other indicators potentially including other tickers
+
+
+Models:
+all models need an evaluate function that returns rmse (for now, later maybe more metrics)
+Walk through validation for each model to backtest: https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/
+Out of sample forecasting will be required for actual implementation/implementing trade bot
+
+
+Things to researrch:
+Whisper Number https://www.earningswhispers.com/stocks/txn
+Other stocks to compare ASML (Netherlands) Stepper Manufacturer
+TSMC Intel AMD ARM Applied material and Lam research
+TI Capacity Constraints (Speed at adding factories, equipment)
+
+April 1st meeting:
+Results from model RMSE, which indicators
+GUI mockup
+Sentimental progress
+
+
+
